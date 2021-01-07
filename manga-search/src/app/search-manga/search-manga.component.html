@@ -1,0 +1,14 @@
+<h1>Search</h1>
+
+<p>
+  <input type="text" #query>
+  <button (click)="submit(query)">Search</button>
+</p>
+
+<div class="col-sm-6 col-md-4" *ngFor="let m of results.results">
+  <p>Titolo: {{ m.title }}</p>
+  <img src="{{ m.image_url }}">
+  <p>ID: {{ m.mal_id }}</p>
+
+
+</div>
